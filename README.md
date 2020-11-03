@@ -7,6 +7,8 @@ let myAwesomeVar = "cool string"
 let mySecondVar = [3, "wow", "9"]
 ```
 
+Awesome. JS can remember names!
+
 ## Naming functions
 
 We can also give a name to a block of code. This is called a *function*. The most straightforward way to name it is this:
@@ -14,7 +16,8 @@ We can also give a name to a block of code. This is called a *function*. The mos
 ```javascript
 function myAwesomeFunction () {
     // this is where the block of code goes
-    // everything we write between { and } is now called "myAwesomefunction" -- JS will remember this name!
+    // everything we write between { and } is now called "myAwesomefunction" 
+    // -- JS will remember this name!
 }
 ```
 
