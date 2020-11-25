@@ -58,7 +58,7 @@ function myParamFunction(myCoolParamName) {
 }
 ```
 
-Setting a parameter name tells JavaScript: "Whatever gets passed in here, give it this name!" Then *within these curly braces* that name equals whatever gets passed in when the function is *invoked*. Check this out:
+Setting a parameter name tells JavaScript: "Whatever gets passed in here, give it this name!" Then *within these curly braces*, that name equals whatever gets passed in when the function is *invoked*. Check this out:
 
 ```javascript
 function gettingTheParam(xxx) {
@@ -76,7 +76,7 @@ gettingTheParam([3,6,12])
 // xxx = [3,6,12]
 ```
 
-Above, we simply logged `xxx` to the console. But we can do *anything with that value that we want to* -- within these two curly braces, we've got unrestricted access to `xxx`.
+Above, we simply logged `xxx` to the console. But we can do *anything with that value that we want to* -- within these two curly braces, we've got unrestricted access to `xxx`. This function checks to see if `xxx` is a string or a number or neither, then does string stuff or number stuff to `xxx` if it can:
 
 ```javascript
 function gettingTheParam(xxx) {
@@ -121,7 +121,9 @@ One awesome thing we can tell a function to do is *return* a value. After it has
 ```javascript
 function returner(name){
     console.log('Name provided: ',name)
-    console.log('It is wrong no matter what.')
+    console.log('Thank you for providing your name.')
+    console.log('Regardless of your input, we'll be sending out the number 999.')
+    console.log('Just because!')
     return 999
 }
 
@@ -152,7 +154,7 @@ const c = addNine(-12)
 `addNine` does the same moves each time... but it gives a different result when we give it a different input.
 
 One way to look at it is that when a function is invoked, three things happen:
-1) The function takes note of what's in the parentheses, and assigns these values to their parameter names in order
+1) The function takes note of what's in the parentheses, and assigns these values to their parameter names in order.
 2) The code block -- everything between the parentheses -- runs! Anything can happen! Parameters are printed or manipulated! Hearts are broken! Worlds collide! Anything!
 3) The function returns whatever we tell it to -- it can be any sort of crazy result from Step 2 that we want... we just have to say `return crazyResult` and it sends it out.
 
